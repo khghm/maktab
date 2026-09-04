@@ -39,6 +39,15 @@ import { R_AKH_EXT1 } from "./readings/r-akh-ext1";
 import { R_ISL_EXT2 } from "./readings/r-isl-ext2";
 import { R_LIT_EXT } from "./readings/r-lit-ext";
 import { R_POL_1 } from "./readings/r-pol-1";
+import { R_POL_2 } from "./readings/r-pol-2";
+import { R_POL_3 } from "./readings/r-pol-3";
+import { R_POL_4 } from "./readings/r-pol-4";
+import { R_POL_5 } from "./readings/r-pol-5";
+import { R_POL_6 } from "./readings/r-pol-6";
+import { R_POL_7 } from "./readings/r-pol-7";
+import { R_POL_8 } from "./readings/r-pol-8";
+import { R_POL_9 } from "./readings/r-pol-9";
+import { R_POL_10 } from "./readings/r-pol-10";
 import { R_HIS_EXT } from "./readings/r-his-ext";
 import { R_LINPSY_EXT } from "./readings/r-linpsy-ext";
 import { R_SOC_EXT } from "./readings/r-soc-ext";
@@ -80,6 +89,15 @@ const ALL_MAPS: Array<Record<string, Chapter[]>> = [
   R_ISL_EXT2,
   R_LIT_EXT,
   R_POL_1,
+  R_POL_2,
+  R_POL_3,
+  R_POL_4,
+  R_POL_5,
+  R_POL_6,
+  R_POL_7,
+  R_POL_8,
+  R_POL_9,
+  R_POL_10,
   R_HIS_EXT,
   R_LINPSY_EXT,
   R_SOC_EXT,
