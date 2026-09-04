@@ -25,6 +25,14 @@ import { R_FAL_EXT7 } from "./readings/r-fal-ext7";
 import { R_WPH_EXT1 } from "./readings/r-wph-ext1";
 import { R_WPH_EXT2 } from "./readings/r-wph-ext2";
 import { R_WPH_EXT3 } from "./readings/r-wph-ext3";
+import { R_WPH_EXT4 } from "./readings/r-wph-ext4";
+import { R_WPH_EXT5 } from "./readings/r-wph-ext5";
+import { R_WPH_EXT6 } from "./readings/r-wph-ext6";
+import { R_WPH_EXT7 } from "./readings/r-wph-ext7";
+import { R_WPH_EXT8 } from "./readings/r-wph-ext8";
+import { R_WPH_EXT9 } from "./readings/r-wph-ext9";
+import { R_WPH_16 } from "./readings/r-wph-ext10";
+import { R_WPH_17_18 } from "./readings/r-wph-ext11";
 import { R_FAL_EXT8 } from "./readings/r-fal-ext8";
 import { R_IRF_EXT1A } from "./readings/r-irfan-ext1a";
 import { R_IRF_EXT1B } from "./readings/r-irfan-ext1b";
@@ -72,6 +80,14 @@ const ALL_MAPS: Array<Record<string, Chapter[]>> = [
   R_WPH_EXT1,
   R_WPH_EXT2,
   R_WPH_EXT3,
+  R_WPH_EXT4,
+  R_WPH_EXT5,
+  R_WPH_EXT6,
+  R_WPH_EXT7,
+  R_WPH_EXT8,
+  R_WPH_EXT9,
+  R_WPH_16,
+  R_WPH_17_18,
   R_FIQH_EXT1,
   R_USUL_EXT1,
   R_KAL_EXT1,
