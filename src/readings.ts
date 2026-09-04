@@ -38,6 +38,7 @@ import { R_ADY_EXT1 } from "./readings/r-ady-ext1";
 import { R_AKH_EXT1 } from "./readings/r-akh-ext1";
 import { R_ISL_EXT2 } from "./readings/r-isl-ext2";
 import { R_LIT_EXT } from "./readings/r-lit-ext";
+import { R_POL_1 } from "./readings/r-pol-1";
 import { R_HIS_EXT } from "./readings/r-his-ext";
 import { R_LINPSY_EXT } from "./readings/r-linpsy-ext";
 import { R_SOC_EXT } from "./readings/r-soc-ext";
@@ -78,6 +79,7 @@ const ALL_MAPS: Array<Record<string, Chapter[]>> = [
   R_AKH_EXT1,
   R_ISL_EXT2,
   R_LIT_EXT,
+  R_POL_1,
   R_HIS_EXT,
   R_LINPSY_EXT,
   R_SOC_EXT,
