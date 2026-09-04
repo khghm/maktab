@@ -427,6 +427,10 @@ export const FIELDS: Field[] = [
 
 /* ---------- lookups ---------- */
 export const BOOKS: Book[] = FIELDS.flatMap((f) => f.books);
+
+/* قابلیت مطالعه: هر کتابی که متن کامل داشته باشد، خواندنی است */
+import { READINGS } from "./readings";
+for (const f of FIELDS) for (const b of f.books) b.readable = Boolean(READINGS[b.id]);
 export const bookById = (id: string) => BOOKS.find((b) => b.id === id);
 export const fieldOfBook = (id: string) => FIELDS.find((f) => f.books.some((b) => b.id === id));
 
