@@ -16,11 +16,23 @@ import { R_LAW_ECO_ART } from "./readings/r-law-eco-art";
 import { R_SUPP_ISLAMIC } from "./readings/r-supp-islamic";
 import { R_SUPP_1 } from "./readings/r-supp-1";
 import { R_SUPP_2 } from "./readings/r-supp-2";
+import { R_FAL_EXT1 } from "./readings/r-fal-ext1";
+import { R_FAL_EXT2 } from "./readings/r-fal-ext2";
+import { R_FAL_EXT3 } from "./readings/r-fal-ext3";
+import { R_FAL_EXT4 } from "./readings/r-fal-ext4";
+import { R_WPH_EXT1 } from "./readings/r-wph-ext1";
+import { R_WPH_EXT2 } from "./readings/r-wph-ext2";
 
 const ALL_MAPS: Array<Record<string, Chapter[]>> = [
   R_SUPP_ISLAMIC,
   R_SUPP_1,
   R_SUPP_2,
+  R_FAL_EXT1,
+  R_FAL_EXT2,
+  R_FAL_EXT3,
+  R_FAL_EXT4,
+  R_WPH_EXT1,
+  R_WPH_EXT2,
   R_FIQH,
   R_USUL,
   R_FALSAFA,
