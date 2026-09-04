@@ -39,6 +39,12 @@ import { R_AKH_EXT1 } from "./readings/r-akh-ext1";
 import { R_ISL_EXT2 } from "./readings/r-isl-ext2";
 import { R_LIT_EXT } from "./readings/r-lit-ext";
 import { R_HIS_EXT } from "./readings/r-his-ext";
+import { R_LINPSY_EXT } from "./readings/r-linpsy-ext";
+import { R_SOC_EXT } from "./readings/r-soc-ext";
+import { R_EDU_EXT } from "./readings/r-edu-ext";
+import { R_LAW_EXT } from "./readings/r-law-ext";
+import { R_ECO_EXT } from "./readings/r-eco-ext";
+import { R_ART_EXT } from "./readings/r-art-ext";
 import { R_FIQH_EXT1 } from "./readings/r-fiqh-ext1";
 import { R_USUL_EXT1 } from "./readings/r-usul-ext1";
 import { R_KAL_EXT1 } from "./readings/r-kalam-ext1";
@@ -73,6 +79,12 @@ const ALL_MAPS: Array<Record<string, Chapter[]>> = [
   R_ISL_EXT2,
   R_LIT_EXT,
   R_HIS_EXT,
+  R_LINPSY_EXT,
+  R_SOC_EXT,
+  R_EDU_EXT,
+  R_LAW_EXT,
+  R_ECO_EXT,
+  R_ART_EXT,
   R_FIQH,
   R_USUL,
   R_FALSAFA,
