@@ -31,6 +31,12 @@ import { R_WPH_EXT6 } from "./readings/r-wph-ext6";
 import { R_WPH_EXT7 } from "./readings/r-wph-ext7";
 import { R_WPH_EXT8 } from "./readings/r-wph-ext8";
 import { R_WPH_EXT9 } from "./readings/r-wph-ext9";
+import { R_WPH_A } from "./readings/r-wph-a";
+import { R_WPH_B } from "./readings/r-wph-b";
+import { R_WPH_C } from "./readings/r-wph-c";
+import { R_WPH_D } from "./readings/r-wph-d";
+import { R_WPH_E } from "./readings/r-wph-e";
+import { R_WPH_F } from "./readings/r-wph-f";
 import { R_WPH_16 } from "./readings/r-wph-ext10";
 import { R_WPH_17_18 } from "./readings/r-wph-ext11";
 import { R_FAL_EXT8 } from "./readings/r-fal-ext8";
@@ -132,6 +138,12 @@ const ALL_MAPS: Array<Record<string, Chapter[]>> = [
   R_LIN_PSY,
   R_SOC_EDU,
   R_LAW_ECO_ART,
+  R_WPH_A,
+  R_WPH_B,
+  R_WPH_C,
+  R_WPH_D,
+  R_WPH_E,
+  R_WPH_F,
 ];
 
 const ALL: Chapter[] = [...LIT_HIST];
