@@ -20,8 +20,14 @@ import { R_FAL_EXT1 } from "./readings/r-fal-ext1";
 import { R_FAL_EXT2 } from "./readings/r-fal-ext2";
 import { R_FAL_EXT3 } from "./readings/r-fal-ext3";
 import { R_FAL_EXT4 } from "./readings/r-fal-ext4";
+import { R_FAL_EXT5 } from "./readings/r-fal-ext5";
+import { R_FAL_EXT7 } from "./readings/r-fal-ext7";
 import { R_WPH_EXT1 } from "./readings/r-wph-ext1";
 import { R_WPH_EXT2 } from "./readings/r-wph-ext2";
+import { R_WPH_EXT3 } from "./readings/r-wph-ext3";
+import { R_FIQH_EXT1 } from "./readings/r-fiqh-ext1";
+import { R_USUL_EXT1 } from "./readings/r-usul-ext1";
+import { R_KAL_EXT1 } from "./readings/r-kalam-ext1";
 
 const ALL_MAPS: Array<Record<string, Chapter[]>> = [
   R_SUPP_ISLAMIC,
@@ -31,8 +37,14 @@ const ALL_MAPS: Array<Record<string, Chapter[]>> = [
   R_FAL_EXT2,
   R_FAL_EXT3,
   R_FAL_EXT4,
+  R_FAL_EXT5,
+  R_FAL_EXT7,
   R_WPH_EXT1,
   R_WPH_EXT2,
+  R_WPH_EXT3,
+  R_FIQH_EXT1,
+  R_USUL_EXT1,
+  R_KAL_EXT1,
   R_FIQH,
   R_USUL,
   R_FALSAFA,
