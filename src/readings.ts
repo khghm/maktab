@@ -25,6 +25,20 @@ import { R_FAL_EXT7 } from "./readings/r-fal-ext7";
 import { R_WPH_EXT1 } from "./readings/r-wph-ext1";
 import { R_WPH_EXT2 } from "./readings/r-wph-ext2";
 import { R_WPH_EXT3 } from "./readings/r-wph-ext3";
+import { R_FAL_EXT8 } from "./readings/r-fal-ext8";
+import { R_IRF_EXT1A } from "./readings/r-irfan-ext1a";
+import { R_IRF_EXT1B } from "./readings/r-irfan-ext1b";
+import { R_IRF_EXT2 } from "./readings/r-irfan-ext2";
+import { R_IRF_EXT3 } from "./readings/r-irfan-ext3";
+import { R_IRF_EXT4 } from "./readings/r-irfan-ext4";
+import { R_TAF_EXT1 } from "./readings/r-taf-ext1";
+import { R_HAD_EXT1 } from "./readings/r-had-ext1";
+import { R_SIR_EXT1 } from "./readings/r-sir-ext1";
+import { R_ADY_EXT1 } from "./readings/r-ady-ext1";
+import { R_AKH_EXT1 } from "./readings/r-akh-ext1";
+import { R_ISL_EXT2 } from "./readings/r-isl-ext2";
+import { R_LIT_EXT } from "./readings/r-lit-ext";
+import { R_HIS_EXT } from "./readings/r-his-ext";
 import { R_FIQH_EXT1 } from "./readings/r-fiqh-ext1";
 import { R_USUL_EXT1 } from "./readings/r-usul-ext1";
 import { R_KAL_EXT1 } from "./readings/r-kalam-ext1";
@@ -45,6 +59,20 @@ const ALL_MAPS: Array<Record<string, Chapter[]>> = [
   R_FIQH_EXT1,
   R_USUL_EXT1,
   R_KAL_EXT1,
+  R_FAL_EXT8,
+  R_IRF_EXT1A,
+  R_IRF_EXT1B,
+  R_IRF_EXT2,
+  R_IRF_EXT3,
+  R_IRF_EXT4,
+  R_TAF_EXT1,
+  R_HAD_EXT1,
+  R_SIR_EXT1,
+  R_ADY_EXT1,
+  R_AKH_EXT1,
+  R_ISL_EXT2,
+  R_LIT_EXT,
+  R_HIS_EXT,
   R_FIQH,
   R_USUL,
   R_FALSAFA,
@@ -60,13 +88,27 @@ const ALL_MAPS: Array<Record<string, Chapter[]>> = [
 
 const ALL: Chapter[] = [...LIT_HIST];
 
+/* اصلاح شناسهٔ گلستان و شاهنامه برای انطباق با فهرست کتابخانه */
+const ID_FIX: Record<string, string> = { "b-gol-1": "b-lit-1", "b-sha-1": "b-lit-2" };
+const fix = (id: string) => ID_FIX[id] ?? id;
+
 export const READINGS: Record<string, Chapter[]> = {};
-for (const c of ALL) (READINGS[c.bookId] ??= []).push(c);
+for (const c of ALL) (READINGS[fix(c.bookId)] ??= []).push(c);
 for (const m of ALL_MAPS)
-  for (const id of Object.keys(m)) (READINGS[id] ??= []).push(...m[id]);
+  for (const id of Object.keys(m)) (READINGS[fix(id)] ??= []).push(...m[id]);
+/* شماره‌گذاری پیوستهٔ فصل‌ها و شناسه‌های یکتا پس از ادغام همهٔ منابع */
 for (const id of Object.keys(READINGS)) {
-  READINGS[id].sort((a, z) => a.index - z.index);
-  READINGS[id] = READINGS[id].map((c, i) => ({ ...c, index: i }));
+  const list = READINGS[id].sort((a, z) => a.index - z.index);
+  READINGS[id] = list.map((c, i) => {
+    const cid = `${id}-ch${i + 1}`;
+    return {
+      ...c,
+      id: cid,
+      bookId: id,
+      index: i,
+      paras: c.paras.map((p, j) => ({ ...p, id: `${cid}-p${j + 1}` })),
+    };
+  });
 }
 
 export const totalParasOf = (id: string) =>
