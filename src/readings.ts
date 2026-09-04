@@ -22,6 +22,17 @@ import { R_FAL_EXT3 } from "./readings/r-fal-ext3";
 import { R_FAL_EXT4 } from "./readings/r-fal-ext4";
 import { R_FAL_EXT5 } from "./readings/r-fal-ext5";
 import { R_FAL_EXT7 } from "./readings/r-fal-ext7";
+import { R_FAL_EXT9 } from "./readings/r-fal-ext9";
+import { R_FAL_5 } from "./readings/r-fal-5";
+import { R_FAL_6 } from "./readings/r-fal-6";
+import { R_FAL_7 } from "./readings/r-fal-7";
+import { R_FAL_8 } from "./readings/r-fal-8";
+import { R_FAL_9 } from "./readings/r-fal-9";
+import { R_FAL_10 } from "./readings/r-fal-10";
+import { R_FAL_11 } from "./readings/r-fal-11";
+import { R_FAL_12 } from "./readings/r-fal-12";
+import { R_FAL_13 } from "./readings/r-fal-13";
+import { R_FAL_14 } from "./readings/r-fal-14";
 import { R_WPH_EXT1 } from "./readings/r-wph-ext1";
 import { R_WPH_EXT2 } from "./readings/r-wph-ext2";
 import { R_WPH_EXT3 } from "./readings/r-wph-ext3";
@@ -94,6 +105,17 @@ const ALL_MAPS: Array<Record<string, Chapter[]>> = [
   R_WPH_EXT9,
   R_WPH_16,
   R_WPH_17_18,
+  R_FAL_EXT9,
+  R_FAL_5,
+  R_FAL_6,
+  R_FAL_7,
+  R_FAL_8,
+  R_FAL_9,
+  R_FAL_10,
+  R_FAL_11,
+  R_FAL_12,
+  R_FAL_13,
+  R_FAL_14,
   R_FIQH_EXT1,
   R_USUL_EXT1,
   R_KAL_EXT1,
