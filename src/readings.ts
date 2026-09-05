@@ -56,6 +56,21 @@ import { R_IRF_EXT1B } from "./readings/r-irfan-ext1b";
 import { R_IRF_EXT2 } from "./readings/r-irfan-ext2";
 import { R_IRF_EXT3 } from "./readings/r-irfan-ext3";
 import { R_IRF_EXT4 } from "./readings/r-irfan-ext4";
+import { R_IRF_EXT5 } from "./readings/r-irfan-ext5";
+import { R_IRF_EXT6 } from "./readings/r-irfan-ext6";
+import { R_IRF_EXT7 } from "./readings/r-irfan-ext7";
+import { R_IRF_EXT8 } from "./readings/r-irfan-ext8";
+import { R_IRF_EXT9 } from "./readings/r-irfan-ext9";
+import { R_IRF_5 } from "./readings/r-irf-5";
+import { R_IRF_6 } from "./readings/r-irf-6";
+import { R_IRF_7 } from "./readings/r-irf-7";
+import { R_IRF_8 } from "./readings/r-irf-8";
+import { R_IRF_9 } from "./readings/r-irf-9";
+import { R_IRF_10 } from "./readings/r-irf-10";
+import { R_IRF_11 } from "./readings/r-irf-11";
+import { R_IRF_12 } from "./readings/r-irf-12";
+import { R_IRF_13 } from "./readings/r-irf-13";
+import { R_IRF_14 } from "./readings/r-irf-14";
 import { R_TAF_EXT1 } from "./readings/r-taf-ext1";
 import { R_HAD_EXT1 } from "./readings/r-had-ext1";
 import { R_SIR_EXT1 } from "./readings/r-sir-ext1";
@@ -125,6 +140,21 @@ const ALL_MAPS: Array<Record<string, Chapter[]>> = [
   R_IRF_EXT2,
   R_IRF_EXT3,
   R_IRF_EXT4,
+  R_IRF_EXT5,
+  R_IRF_EXT6,
+  R_IRF_EXT7,
+  R_IRF_EXT8,
+  R_IRF_EXT9,
+  R_IRF_5,
+  R_IRF_6,
+  R_IRF_7,
+  R_IRF_8,
+  R_IRF_9,
+  R_IRF_10,
+  R_IRF_11,
+  R_IRF_12,
+  R_IRF_13,
+  R_IRF_14,
   R_TAF_EXT1,
   R_HAD_EXT1,
   R_SIR_EXT1,
