@@ -94,6 +94,20 @@ import { R_SOC_EXT } from "./readings/r-soc-ext";
 import { R_EDU_EXT } from "./readings/r-edu-ext";
 import { R_LAW_EXT } from "./readings/r-law-ext";
 import { R_ECO_EXT } from "./readings/r-eco-ext";
+import { R_ECO_X1 } from "./readings/r-eco-x1";
+import { R_ECO_X2 } from "./readings/r-eco-x2";
+import { R_ECO_X3 } from "./readings/r-eco-x3";
+import { R_ECO_X4 } from "./readings/r-eco-x4";
+import { R_ECO_5 } from "./readings/r-eco-5";
+import { R_ECO_6 } from "./readings/r-eco-6";
+import { R_ECO_7 } from "./readings/r-eco-7";
+import { R_ECO_8 } from "./readings/r-eco-7";
+import { R_ECO_9 } from "./readings/r-eco-10";
+import { R_ECO_10 } from "./readings/r-eco-10";
+import { R_ECO_11 } from "./readings/r-eco-11";
+import { R_ECO_12 } from "./readings/r-eco-11";
+import { R_ECO_13 } from "./readings/r-eco-13";
+import { R_ECO_14 } from "./readings/r-eco-13";
 import { R_ART_EXT } from "./readings/r-art-ext";
 import { R_FIQH_EXT1 } from "./readings/r-fiqh-ext1";
 import { R_USUL_EXT1 } from "./readings/r-usul-ext1";
@@ -178,6 +192,10 @@ const ALL_MAPS: Array<Record<string, Chapter[]>> = [
   R_EDU_EXT,
   R_LAW_EXT,
   R_ECO_EXT,
+  R_ECO_X1,
+  R_ECO_X2,
+  R_ECO_X3,
+  R_ECO_X4,
   R_ART_EXT,
   R_FIQH,
   R_USUL,
